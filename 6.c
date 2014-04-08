@@ -7,12 +7,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int sum_numbers(int s, int t);
-
 void main(void)
 {
 	FILE *in_file;
-	int i, j;
+	int a, b;
 	int no_cases, start, end, sum=0;
 
 	in_file = fopen("input.txt", "r");
@@ -20,13 +18,13 @@ void main(void)
 
 	fscanf(in_file, "%d", &no_cases);
 
-	for(i=0; i<no_cases; i++)
+	for(a=0; a<no_cases; a++)
 	{
 		fscanf(in_file, "%d %d", &start, &end);
 		sum=0;
-		for(j=start; j<=end; j++)
+		for(b=start; b<=end; b++)
 		{
-			sum+=j;
+			sum+=b;
 		
 			
 		}	
